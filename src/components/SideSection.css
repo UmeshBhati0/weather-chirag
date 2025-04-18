@@ -1,0 +1,235 @@
+.main {
+    height: 92.5%;
+    width: 100%;
+}
+
+#groove {
+    height: 62.55%;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    text-shadow: 2px 2px 10px rgba(50, 124, 189, 0.481);
+
+    background: rgba(255, 255, 255, 0.148);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(193, 194, 195, 0.250);
+}
+
+.hr_current {
+    border: 0.11px solid rgba(231, 229, 229, 0.589);
+    height: 0.1em;
+}
+
+/* search-bar */
+#search_bar {
+    float: right;
+}
+
+.searchBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input {
+    outline: none;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    height: 2rem;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+    text-transform: capitalize;
+    border-style: none;
+    border-bottom: 0.5px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 1s;
+}
+
+.searchBox input::placeholder {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.searchBox>#search_icon {
+    margin: 0.5rem;
+    width: 40px;
+    height: 40px;
+    padding: 5px 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+
+    color: rgba(255, 255, 255, 0.736);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(193, 194, 195, 0.250);
+    transition: 2s ease;
+}
+
+.searchBox:hover input,
+.searchBox:active input {
+    width: 220px;
+    opacity: 1;
+    padding: 8px 10px;
+}
+
+.searchBox:hover #search_icon {
+    color: #000000;
+}
+
+/* =================================================== */
+/* current-logo */
+#logo_feelLike {
+    height: 66.2%;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+
+}
+
+#logo_feelLike>img {
+    margin: 0.8rem 0 0 0;
+    width: 8rem;
+    height: 8rem;
+}
+
+#logo_feelLike>span {
+    padding-top: 3.5rem;
+    line-height: 10%;
+    color: #ffffff;
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#logo_feelLike>#feels_like {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2.5rem 0 1rem 0;
+}
+
+#feels_like>:nth-child(1) {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#feels_like>span {
+    font-weight: 600;
+    color: #fff;
+    margin: 0.5rem 0 0.3rem 0.5rem;
+
+    font-size: 0.8rem;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* =================================================== */
+/* location and time */
+
+#curr_location_day {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1.2rem 0 0.3rem 0;
+}
+
+#location,
+#day_time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+#location>:nth-child(1),
+#day_time>:nth-child(1) {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+#location>span,
+#day_time>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin: 0 0 0.1rem 0.6rem;
+}
+
+
+/* groove_2 */
+
+#groove_2 {
+    margin: 1em 0 0 0;
+    width: 100%;
+    height: 35%;
+    border-radius: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* sunrise  */
+#sun,
+#moon {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8rem;
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sun>.rise,
+#moon>.rise {
+    height: 98%;
+    width: 49.4%;
+    /* padding: 0.3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.148);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(193, 194, 195, 0.17);
+    transition: 1s ease all;
+}
+
+.rise:hover {
+    transform: scale(0.96);
+}

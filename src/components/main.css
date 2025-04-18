@@ -1,0 +1,506 @@
+#main_parent {
+    height: 100%;
+    width: 100%;
+}
+
+/* header starts here */
+#header {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+}
+
+#header>span {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #fff;
+    -webkit-text-stroke: #ffffff;
+    -webkit-text-stroke-width: 0.3px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.1em;
+    animation: flicker 5s ease-in-out infinite alternate;
+}
+
+#header>span:hover {
+    color: transparent;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.8;
+        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.26);
+    }
+
+    100% {
+        opacity: 2;
+        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.26);
+    }
+}
+
+.c_f_icon {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c_f_icon>button {
+    height: 40px;
+    width: 40px;
+    margin: 0 0.8em 0 0;
+    display: flex;
+    padding: 0.6em 1em 1em 0.45em;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.1em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.148);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(193, 194, 195, 0.17);
+    transition: 1s ease all;
+
+}
+
+.c_f_icon>button:hover {
+    cursor: pointer;
+    transform: scale(1.099);
+    border: 1px solid rgba(69, 164, 255, 0.13);
+    background: rgba(69, 164, 255, 0.09);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* section-1 start here */
+#section_1 {
+    height: 22%;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#section_1>div,
+#section_2>div,
+#section_3>div {
+    border-radius: 20px;
+    height: 100%;
+    width: 40%;
+    margin: 0.8em;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.108);
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(179, 177, 177, 0);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(193, 194, 195, 0.17);
+}
+
+
+
+#section_2 {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    margin: 1em 0;
+}
+
+#section_2>#average_graph {
+    border-radius: 20px;
+    height: 100%;
+    width: 75%;
+    margin: 0.8em;
+}
+
+
+#average_chart_container {
+    height: 100%;
+    width: 84%;
+    z-index: 2;
+    position: absolute;
+}
+
+/* wind status section */
+#section_2>#wind_status {
+    border-radius: 20px;
+    height: 100%;
+    width: 25%;
+    margin: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#wind_status>#data_1 {
+    height: 65%;
+    width: 70%;
+    background: url(../Assets/icon/compass.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wind_status>#data_1>#wind_speed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+#wind_status>#data_2 {
+    height: 15%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 0.3rem 0.5rem;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#wind_status>#data_2>div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+#data_1>#wind_speed>span,
+sub {
+    color: #ffffffea;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#section_3 {
+    height: 28%;
+    width: 100%;
+    display: flex;
+    margin: 1em 0 0 0;
+}
+
+#section_3>#rain_chance {
+    padding: 1.2rem 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+}
+
+#rain_div {
+    display: flex;
+    height: 100%;
+}
+
+.rain_bg {
+    margin-top: 1.26em;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+}
+
+.rain_bg>span {
+    padding: 0.8rem 0.28rem;
+    font-size: 0.6em;
+    font-weight: 900;
+    color: #e8d8d8ce;
+}
+
+#rain_graph {
+    height: 100%;
+    margin-bottom: 1rem;
+    padding: 0 0 0 1.4rem;
+}
+
+
+/* forecast */
+#section_3>#forecast {
+    border-radius: 20px;
+    height: 100%;
+    width: 60%;
+    margin: 0.8em;
+    padding: 1em;
+}
+
+
+
+/* section-1 div */
+/* ==================== */
+#humidity,
+#air_quality,
+#visibility {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.analytical_data {
+    height: 75%;
+    width: 98%;
+    padding: 0.5em 1em 0 1em;
+    z-index: 2;
+}
+
+.title {
+    color: #ffff;
+    text-shadow: 2px 2px 10px rgba(50, 124, 189, 0.229);
+    padding: 0.8rem 0 0.3rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.analytical_data>.num {
+    padding: 0.2rem 0.3rem 0.1rem 0.5rem;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.analytical_data>.desc {
+    padding: 0 0.5rem;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.analytical_data>#icon_1,
+.analytical_data>#icon_2,
+.analytical_data>#icon_3 {
+    float: right;
+    margin: 0.8rem 0.5rem;
+    height: 2rem;
+    width: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* analytical card icons */
+#icon_1,
+#icon_2,
+#icon_3 {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.173);
+    transition: 1s ease;
+    background: #8FBCFE;
+    color: rgb(255, 255, 255);
+}
+
+
+#icon_1:hover,
+#icon_2:hover,
+#icon_3:hover {
+    background: rgb(89, 172, 255);
+    color: rgb(252, 252, 252);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+#humidity_graph_container {
+    z-index: 200;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 58px;
+    left: -25px;
+}
+
+#air_quality_graph_container {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 22px;
+    left: 80px;
+}
+
+#visibility_container {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    top: 120px;
+    right: 2em;
+}
+
+.progress_line {
+    margin-top: 7px;
+    height: 8px;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.378);
+}
+
+.progress_line .progress {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    transition: 2s all;
+    background: #00000040;
+    border: 1px solid rgba(0, 0, 0, 0.174);
+}
+
+.progress_line>.progress:hover {
+    background: #00000081;
+}
+
+
+@keyframes animate {
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+/* ============================ */
+#forecast_switch {
+    height: 60%;
+    width: 100%;
+}
+
+
+#cards {
+    display: flex;
+    padding: 1rem 0px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-radius: 10px;
+}
+
+.card {
+    height: 66%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    flex: 0 0 16.6%;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    transition: 2s ease all;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background: #8FBCFE;
+    color: #fff;
+    transform: scale(0.96);
+}
+
+.card>span:nth-child(1) {
+    width: 85%;
+    padding: 1.5rem 0;
+    font-weight: 700;
+    color: #f6f0f0ce;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card>span:nth-child(3) {
+    padding: 0.8rem;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* today_weakly-switch section  */
+.today_weakly-switch {
+    height: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.today_weakly-switch label {
+    height: 40px;
+    width: 40px;
+    margin: 0 0.8em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0.6em 1em 1em 0.45em; */
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.148);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(193, 194, 195, 0.17);
+    transition: 1s ease all;
+}
+
+.today_weakly-switch>label:hover {
+    cursor: pointer;
+    transform: scale(1.099);
+    border: 1px solid rgba(69, 164, 255, 0.13);
+    background: rgba(69, 164, 255, 0.09);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.today_weakly-switch input[type="radio"] {
+    display: none;
+}
+
+.today_weakly-switch input[type="radio"]:checked+label {
+    background: #8FBCFE;
+}
+
+.today_weakly-switch input[type="radio"]:checked+label+.tab {
+    display: block;
+}
